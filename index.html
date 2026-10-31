@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="ja"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>採用支援サービス｜人事ラボ（運営：株式会社飛竜企画）</title>
+<meta name="description" content="人事ラボは企業の採用担当者向けの情報・相談サイト。運営会社の株式会社飛竜企画は1974年設立。求人広告・採用サイトや動画の制作・RPOなど、採用業務を支援しています。">
+<style>
+:root{--navy:#183c5b;--ink:#1d2e3b;--body:#405160;--muted:#617180;--blue:#078ecc;--deep:#086da3;--pale:#eef8fd;--line:#e0e8ed;--bg:#f8fafc;--max:1120px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:82px}
+body{margin:0;background:white;color:var(--ink);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,Arial,sans-serif;line-height:1.85;font-size:16px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
+.container{width:min(var(--max),calc(100% - 88px));margin:auto}
+.h-ruled{border-top:1px solid var(--line)}
+.navbar{height:79px;background:#fff;border-bottom:1px solid #e8edf1;position:sticky;top:0;z-index:20}
+.navinner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:26px}
+.logo{display:flex;align-items:center;gap:13px;flex-shrink:0}
+.logo img{height:44px;width:44px;object-fit:cover;border-radius:3px}
+.logo strong{display:block;color:#18384e;letter-spacing:-.025em;font-size:15px;line-height:1.4}
+.logo small{display:block;color:#7c8894;font-weight:500;font-size:11px;line-height:1.4;margin-top:2px}
+.navigation{display:flex;align-items:center;gap:29px;font-size:13px;font-weight:700}
+.navigation>a:hover{color:var(--deep)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:13px;border-radius:6px;font-weight:750;font-size:14px;line-height:1.4;padding:15px 22px;transition:background .2s ease,transform .2s ease;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:#087db7;color:#fff}
+.btn-primary:hover{background:#086496}
+.btn-outline{border:1px solid #bed6e6;color:#1c658d}
+.btn-outline:hover{background:#eff9fe}
+.navigation .btn{padding:11px 19px;font-size:12px}
+.hero{overflow:hidden;background:white}
+.hero-grid{display:grid;grid-template-columns:41% 59%;align-items:center;min-height:505px;padding:40px 0 45px}
+.hero-copy{position:relative;z-index:1;padding:24px 0 24px}
+.section-label{margin:0 0 21px;color:#157eb2;font-weight:850;font-size:12px;letter-spacing:.1em;display:flex;align-items:center;gap:13px}
+.section-label:before{content:"";width:25px;height:3px;background:var(--blue)}
+.hero h1{font-size:clamp(36px,4vw,54px);font-weight:850;letter-spacing:-.075em;line-height:1.49;margin:0 0 22px;color:#1a344b}
+.hero .lead{color:#4e6270;margin:0 0 30px;font-size:15px;line-height:2.05;max-width:450px}
+.hero-image{position:relative;margin-right:-52px}
+.hero-image img{width:100%;aspect-ratio:16/9;object-fit:contain}
+.hero-meta{margin:27px 0 0;font-size:12px;color:#86939c;letter-spacing:.01em}
+.proof{background:#f5f9fc;border-top:1px solid #eaf0f5;border-bottom:1px solid #e2edf3}
+.proof-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding:30px 0 14px}
+.proof-head h2{font-size:17px;letter-spacing:-.025em;margin:0;color:#234460}
+.proof-head p{font-size:11px;color:#7b8995;margin:0}
+.proof-grid{display:grid;grid-template-columns:1fr 1fr 1.25fr 1fr;padding:0 0 36px}
+.fact{padding:11px 25px 8px 27px;border-right:1px solid #dae5ee;min-width:0}
+.fact:first-child{padding-left:0}
+.fact:last-child{border:0;padding-right:0}
+.fact .number{font-weight:900;color:#1b668e;letter-spacing:-.07em;font-size:clamp(28px,3vw,39px);line-height:1.25;white-space:nowrap}
+.fact .number span{font-size:.52em;letter-spacing:0;padding-left:3px;font-weight:700}
+.fact .number.partner{font-size:clamp(23px,2.5vw,33px);letter-spacing:-.045em}
+.fact .title{font-size:14px;font-weight:750;color:#2a4357;margin:7px 0 0}
+.fact .note{font-size:11px;color:#7c8b99;margin:3px 0 0}
+.section{padding:89px 0}
+.section-top{margin-bottom:37px}
+.section-top h2{font-size:clamp(29px,3vw,38px);letter-spacing:-.052em;line-height:1.48;margin:0 0 12px;color:#1b3e57}
+.section-top p:not(.section-label){color:#5b6c7b;line-height:2;font-size:15px;margin:0;max-width:760px}
+.coverage{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:30px}
+.coverage article{border-top:3px solid #a8d9ee;padding:25px 25px 11px;border-right:1px solid var(--line)}
+.coverage article:first-child{padding-left:0}
+.coverage article:nth-child(2){border-top-color:#49a6d0}
+.coverage article:last-child{border-right:0;border-top-color:#0c79b9;padding-right:0}
+.coverage h3{font-size:19px;margin:0 0 10px;letter-spacing:-.035em}
+.coverage p{color:#60707e;font-size:14px;line-height:1.95;margin:0}
+.service{background:#fff}
+.services{border-top:1px solid var(--line)}
+.service-row{display:grid;grid-template-columns:34% 1fr;gap:46px;padding:28px 0;border-bottom:1px solid var(--line)}
+.service-name{display:flex;align-items:flex-start;gap:21px}
+.service-name b{color:#91b8ca;font-size:14px;letter-spacing:.04em;font-weight:800;padding-top:4px}
+.service-name h3{margin:0;color:#1d3a54;font-size:22px;line-height:1.55;letter-spacing:-.04em}
+.service-content p{margin:0 0 11px;color:#43596a;font-size:15px}
+.service-content ul{display:flex;gap:10px 20px;flex-wrap:wrap;list-style:none;margin:0;padding:0;color:#697b88;font-size:13px}
+.service-content li{position:relative;padding-left:12px}
+.service-content li:before{content:"";height:5px;width:5px;border-radius:50%;background:#42a4d6;position:absolute;left:0;top:.8em}
+.service-link{display:inline-flex;margin-top:28px;color:#117bac;font-size:14px;font-weight:800;border-bottom:1px solid #94c8e2;padding-bottom:3px}
+.works{background:#f6f9fb}
+.works-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.work{background:#fff;border:1px solid #e2e9ed;overflow:hidden;border-radius:5px}
+.work img{width:100%;height:180px;object-fit:cover}
+.work .desc{padding:21px 23px 25px}
+.work .desc span{font-size:11px;letter-spacing:.07em;color:#6d95ab;font-weight:850}
+.work h3{font-size:18px;letter-spacing:-.035em;margin:6px 0 5px;color:#203e55}
+.work p{font-size:13px;margin:0;line-height:1.85;color:#72818f}
+.works-note{font-size:12px;color:#7c8b99;margin:18px 0 0}
+.partner-section{background:#fff}
+.partner-box{display:grid;grid-template-columns:43% 1fr;gap:60px;align-items:start}
+.partner-main{padding:12px 0 0}
+.partner-main h2{font-size:clamp(31px,3.4vw,43px);margin:0 0 18px;color:#16466b;letter-spacing:-.05em;line-height:1.48}
+.partner-main .label{font-size:12px;letter-spacing:.12em;font-weight:850;color:#267caa;margin:0 0 20px}
+.partner-main p{margin:0;font-size:15px;color:#586b7c;line-height:2}
+.partner-details{padding:28px 0 0;border-top:3px solid #087fb6}
+.partner-details h3{font-size:20px;margin:0 0 20px;letter-spacing:-.04em;color:#25445c}
+.steps{display:grid;grid-template-columns:repeat(2,1fr);gap:23px 27px}
+.step{padding:0 0 16px;border-bottom:1px solid var(--line)}
+.step b{font-size:12px;color:#137ea9;letter-spacing:.07em}
+.step h4{font-size:16px;margin:7px 0 7px;letter-spacing:-.03em;color:#203e54}
+.step p{font-size:13px;line-height:1.8;margin:0;color:#697d8a}
+.company{background:#f5f9fc}
+.company-grid{display:grid;grid-template-columns:34% 1fr;gap:70px}
+.company h2{margin:0 0 15px;color:#24445b;font-size:30px;letter-spacing:-.04em}
+.company .summary{font-size:14px;color:#6c7e8c;margin:0;line-height:2}
+.company dl{margin:0;border-top:1px solid #d8e5ee}
+.company dl>div{display:grid;grid-template-columns:156px 1fr;gap:14px;padding:16px 0;border-bottom:1px solid #d8e5ee;font-size:14px}
+.company dt{color:#6d7f8b;font-weight:750}
+.company dd{margin:0;color:#2f4556}
+.company small{font-size:11px;color:#7d8b98}
+.company a.external{font-size:13px;color:#126f9e;font-weight:750;display:inline-block;margin-top:24px;border-bottom:1px solid #9ccbdc}
+.contact{background:#143c59;color:#fff;padding:67px 0 76px}
+.contact-grid{display:flex;justify-content:space-between;align-items:center;gap:28px}
+.contact h2{font-size:32px;letter-spacing:-.045em;line-height:1.5;margin:0 0 11px;color:#fff}
+.contact p{margin:0;color:#d0e1ea;font-size:14px}
+.contact .btn{background:#fff;color:#175171;padding:17px 30px}
+.footer{background:#fff}
+.footer-inner{padding:27px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;color:#7e8b96}
+.footer a:hover{color:#177cac}
+@media(max-width:990px){
+ .navigation{gap:18px}
+ .navigation>a:nth-child(2){display:none}
+ .hero-grid{min-height:0;grid-template-columns:44% 56%;padding:55px 0}
+ .hero-image{margin-right:-25px}
+ .container{width:min(var(--max),calc(100% - 54px))}
+ .hero h1{font-size:40px}
+ .service-row{grid-template-columns:31% 1fr;gap:24px}
+}
+@media(max-width:730px){
+ .navbar{height:65px}
+ .logo img{height:38px;width:38px}
+ .logo strong{font-size:14px}
+ .navigation>a:not(.btn){display:none}
+ .navigation .btn{padding:11px 14px}
+ .container{width:calc(100% - 38px)}
+ .hero-grid{grid-template-columns:1fr;padding:43px 0 21px;gap:3px}
+ .hero h1{font-size:clamp(32px,8vw,42px)}
+ .hero-copy{padding:0}
+ .hero .lead{font-size:14px;margin-bottom:22px}
+ .hero-image{margin:0 -22px 0 -14px}
+ .hero-image img{width:100%;aspect-ratio:16/9}
+ .hero-meta{display:none}
+ .proof-head{display:block;padding:21px 0 10px}
+ .proof-head p{margin-top:3px}
+ .proof-grid{grid-template-columns:repeat(2,1fr);padding-bottom:25px}
+ .fact{padding:17px 13px 13px!important;border:0;border-top:1px solid #dde8f0}
+ .fact:nth-child(odd){padding-left:0!important;border-right:1px solid #dde8f0}
+ .fact:nth-child(even){padding-left:18px!important}
+ .fact .number{font-size:30px}
+ .fact .number.partner{font-size:26px}
+ .fact .title{font-size:12px}
+ .fact .note{font-size:10px}
+ .section{padding:65px 0}
+ .section-top{margin-bottom:27px}
+ .section-top h2{font-size:28px}
+ .section-top p:not(.section-label){font-size:14px}
+ .coverage{grid-template-columns:1fr;margin-top:22px}
+ .coverage article,.coverage article:first-child,.coverage article:last-child{border-right:0;padding:15px 0 23px}
+ .coverage article+article{margin-top:10px}
+ .coverage h3{font-size:17px;margin-bottom:5px}
+ .coverage p{font-size:13px}
+ .service-row{grid-template-columns:1fr;gap:8px;padding:23px 0}
+ .service-name{gap:12px}
+ .service-name h3{font-size:20px}
+ .service-content p{font-size:14px}
+ .works-grid{grid-template-columns:1fr}
+ .work img{height:200px}
+ .partner-box{grid-template-columns:1fr;gap:29px}
+ .partner-main h2{font-size:32px}
+ .partner-main p{font-size:14px}
+ .partner-details{padding-top:23px}
+ .steps{gap:20px}
+ .company-grid{grid-template-columns:1fr;gap:25px}
+ .company dl>div{grid-template-columns:100px 1fr;gap:12px;font-size:12px}
+ .contact-grid{display:block}
+ .contact h2{font-size:27px}
+ .contact p{font-size:13px;margin-bottom:20px}
+ .footer-inner{display:block}
+ .footer-inner div+div{margin-top:6px}
+}
+@media(max-width:360px){.steps{grid-template-columns:1fr}.logo small{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+
+/* 人事ラボを主ブランドとするヘッダー */
+.logo{gap:0;align-items:baseline}
+.logo .jinji-logo{font-size:28px;line-height:1;letter-spacing:-.095em;color:#213a50;font-weight:900;white-space:nowrap}
+.logo .jinji-logo i{display:inline-block;vertical-align:bottom;width:8px;height:8px;background:#f4d13f;border-radius:1px;margin:0 0 2px 6px}
+.logo .logo-byline{font-size:11px;font-weight:700;letter-spacing:0;color:#758797;border-left:1px solid #ced9df;padding-left:12px;margin-left:19px;white-space:nowrap}
+.proof-head{padding-top:33px;padding-bottom:18px}
+.proof-head h2{font-size:clamp(19px,2.1vw,24px);letter-spacing:-.04em;line-height:1.48}
+.hero .section-label{letter-spacing:.08em}
+.work img{object-fit:contain;padding:24px;background:#eff8fc}
+@media(max-width:730px){.logo .jinji-logo{font-size:25px}.logo .logo-byline{font-size:9px;padding-left:9px;margin-left:11px}.proof-head h2{font-size:19px}}
+@media(max-width:390px){.logo .logo-byline{display:none}}
+</style></head><body>
+<header class="navbar"><div class="container navinner">
+  <a class="logo" href="#top" aria-label="人事ラボ ページトップ"><span class="jinji-logo" aria-hidden="true">人事ラボ<i></i></span><span class="logo-byline">運営：株式会社飛竜企画</span></a>
+  <nav class="navigation" aria-label="ページ内ナビゲーション">
+    <a href="#strength">運営会社について</a><a href="#services">サービス</a><a href="#partner">第二人事部とは</a>
+    <a class="btn btn-primary" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">お問い合わせ <span aria-hidden="true">↗</span></a>
+  </nav>
+</div></header>
+<main id="top">
+<section class="hero"><div class="container hero-grid">
+  <div class="hero-copy">
+    <p class="section-label">JINJI LAB / RECRUITMENT SUPPORT</p>
+    <h1>採用のご相談は、<br>人事ラボへ。</h1>
+    <p class="lead">人事ラボは、採用に関する情報と相談の入口です。運営会社の飛竜企画が、新卒・中途・アルバイト・パートの採用を、媒体選定から制作・運用まで支援しています。</p>
+    <a class="btn btn-outline" href="#strength">運営会社の実績を見る <span aria-hidden="true">→</span></a>
+    <p class="hero-meta">人事ラボ ／ 運営会社：株式会社飛竜企画</p>
+  </div>
+  <div class="hero-image"><img src="assets/hero-network.webp" alt="オフィス・工場・物流拠点と飛竜企画のスタッフがつながる、採用支援のイラスト" fetchpriority="high"></div>
+</div></section>
+<section class="proof" id="strength"><div class="container">
+  <div class="proof-head"><h2>人事ラボを運営する、株式会社飛竜企画の実績</h2><p>※各数値・認定の時点は注記をご確認ください。</p></div>
+  <div class="proof-grid">
+    <div class="fact"><div class="number">1974<span>年</span></div><p class="title">設立</p><p class="note">50年以上の採用支援</p></div>
+    <div class="fact"><div class="number">500<span>以上</span></div><p class="title">取扱求人メディア</p><p class="note">社内会社紹介資料に基づく</p></div>
+    <div class="fact"><div class="number partner">Indeed</div><p class="title">プラチナムパートナー</p><p class="note">2026年10月時点の社内情報</p></div>
+    <div class="fact"><div class="number">27.36<span>億円</span></div><p class="title">取扱高</p><p class="note">2025年3月実績</p></div>
+  </div>
+</div></section>
+<section class="section"><div class="container">
+  <div class="section-top">
+    <p class="section-label">TARGET</p>
+    <h2>新卒・中途・アルバイト・パート。<br>幅広い採用課題のご相談に対応します。</h2>
+    <p>採用したい人や採用活動の進め方は、募集する職種や雇用形態によって異なります。各領域の手法を組み合わせ、課題に合った支援を検討します。</p>
+  </div>
+  <div class="coverage">
+    <article><h3>新卒採用</h3><p>母集団形成、インターンシップ、会社説明会、採用サイト、応募者対応・選考運用など。</p></article>
+    <article><h3>中途採用</h3><p>求人メディア、ダイレクトリクルーティング、採用広報、スカウト代行、選考支援など。</p></article>
+    <article><h3>アルバイト・パート採用</h3><p>エリア・拠点別の募集、求人広告の制作・運用、応募受付、採用実務の効率化など。</p></article>
+  </div>
+</div></section>
+<section class="section service h-ruled" id="services"><div class="container">
+  <div class="section-top">
+    <p class="section-label">SERVICE</p>
+    <h2>運営会社・飛竜企画の採用支援サービス</h2>
+    <p>人事ラボでご案内している、飛竜企画の主なサービスです。採用メディア、制作、アウトソーシング、採用DXや研修などに対応します。</p>
+  </div>
+  <div class="services">
+    <div class="service-row"><div class="service-name"><b>01</b><h3>採用メディア・<br>広告運用</h3></div><div class="service-content"><p>採用対象・勤務地・予算に応じて、求人メディアや広告手法を選定・運用します。</p><ul><li>インディードプラス（Indeed PLUS）</li><li>インディード（Indeed）</li><li>求人ボックス</li><li>スタンバイ</li><li>リクナビ</li><li>バイトル</li><li>doda</li><li>ネット広告・SNS</li></ul></div></div>
+    <div class="service-row"><div class="service-name"><b>02</b><h3>採用ブランディング・<br>クリエイティブ</h3></div><div class="service-content"><p>取材・撮影から原稿・デザインまで。仕事や職場の実像を伝えるコンテンツを制作します。</p><ul><li>採用ホームページ制作</li><li>採用動画制作</li><li>印刷物・パンフ制作</li><li>説明会・合説ツール</li><li>インターンシップ開発</li></ul></div></div>
+    <div class="service-row"><div class="service-name"><b>03</b><h3>採用アウトソーシング・<br>RPO</h3></div><div class="service-content"><p>応募受付や日程調整から管理画面の運用まで、採用担当者の業務を支援します。</p><ul><li>採用管理システム（ATS）管理代行</li><li>オファー／スカウト／DM送信代行</li><li>RPO</li><li>説明会・面接の運営支援</li></ul></div></div>
+    <div class="service-row"><div class="service-name"><b>04</b><h3>採用DX・テスト・<br>研修サービス</h3></div><div class="service-content"><p>運用の効率化や採用時の見極め、採用後の育成などを支援します。</p><ul><li>採用DX</li><li>適性テスト</li><li>面接官トレーニング</li><li>OJT指導スキル研修</li><li>1年目フォローアップ</li></ul></div></div>
+  </div>
+  <a class="service-link" href="https://www.jinjilab.jp/service/" target="_blank" rel="noopener">人事ラボのサービス一覧を見る <span aria-hidden="true"> ↗</span></a>
+</div></section>
+<section class="section works"><div class="container">
+  <div class="section-top">
+    <p class="section-label">CREATIVE & OPERATION</p>
+    <h2>支援内容のイメージ</h2>
+    <p>運営会社の飛竜企画では、採用広報の制作から応募者対応まで、さまざまな工程を支援しています。</p>
+  </div>
+  <div class="works-grid">
+    <article class="work"><img src="assets/service-consultation.png" alt="採用支援のご相談イメージ" loading="lazy"><div class="desc"><span>PLANNING &amp; CONTENT</span><h3>採用情報の整理・制作</h3><p>仕事内容や職場環境の取材、採用サイト・説明資料などの制作。</p></div></article>
+    <article class="work"><img src="assets/service-branding.png" alt="第二人事部として伴走するイメージ" loading="lazy"><div class="desc"><span>HIRING SUPPORT</span><h3>募集・選考の実務支援</h3><p>応募者管理、スカウト送信、採用活動の運用サポート。</p></div></article>
+    <article class="work"><img src="assets/service-operations.png" alt="採用施策をご案内するイメージ" loading="lazy"><div class="desc"><span>CONSULTATION</span><h3>採用課題の相談・分析</h3><p>採用状況や媒体の効果を確認し、次の施策を検討。</p></div></article>
+  </div>
+  <p class="works-note">※画像は説明用のイラストです。実在する顧客事例の写真は使用していません。</p>
+</div></section>
+<section class="section partner-section" id="partner"><div class="container partner-box">
+  <div class="partner-main">
+    <p class="label">ABOUT THE SUPPORT</p>
+    <h2>貴社の<br>「第二人事部」として。</h2>
+    <p>人事ラボの運営会社・飛竜企画が大切にしているのは、お客様との1on1の対話による課題抽出です。企業の「第二人事部」として、必要な施策を一緒に考え、実行まで支援します。</p>
+  </div>
+  <div class="partner-details">
+    <h3>採用の現状把握から、次の一手まで。</h3>
+    <div class="steps">
+      <div class="step"><b>01 / LISTEN</b><h4>1on1で現状を確認</h4><p>採用計画、応募状況、現場の課題やご担当者の悩みを伺います。</p></div>
+      <div class="step"><b>02 / ANALYZE</b><h4>課題と原因を整理</h4><p>媒体・原稿・応募者対応・選考などを確認し、改善点を探ります。</p></div>
+      <div class="step"><b>03 / PLAN</b><h4>施策と役割を決める</h4><p>優先順位と予算に応じて、必要な手法と支援範囲を検討します。</p></div>
+      <div class="step"><b>04 / ACT</b><h4>実行と振り返り</h4><p>制作・運用・アウトソーシングを通じて施策を進め、結果を確認します。</p></div>
+    </div>
+  </div>
+</div></section>
+<section class="section company" id="company"><div class="container company-grid">
+  <div><p class="section-label">OPERATING COMPANY</p><h2>運営会社について</h2><p class="summary">人事ラボは、株式会社飛竜企画が運営しています。</p><a class="external" href="https://www.jinjilab.jp/company/" target="_blank" rel="noopener">人事ラボ運営会社ページ ↗</a></div>
+  <dl>
+    <div><dt>会社名</dt><dd>株式会社飛竜企画</dd></div>
+    <div><dt>設立</dt><dd>1974年7月</dd></div>
+    <div><dt>資本金</dt><dd>3,000万円</dd></div>
+    <div><dt>取扱高</dt><dd>27億36百万円 <small>（2025年3月実績）</small></dd></div>
+    <div><dt>従業員数</dt><dd>71名 <small>（2025年10月実績）</small></dd></div>
+    <div><dt>所在地</dt><dd>〒153-0063 東京都目黒区目黒2-11-11 HKビル</dd></div>
+    <div><dt>事業内容</dt><dd>各種人材関連サービスの提供</dd></div>
+    <div><dt>許認可</dt><dd>有料職業紹介業　13-ユ-312045</dd></div>
+  </dl>
+</div></section>
+<section class="contact"><div class="container contact-grid">
+  <div><h2>採用のことは、人事ラボへご相談ください。</h2><p>運営会社の飛竜企画が、採用状況やお困りごとを伺います。</p></div>
+  <a class="btn" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">お問い合わせ先を見る <span aria-hidden="true"> ↗</span></a>
+</div></section>
+</main>
+<footer class="footer"><div class="container footer-inner"><div><strong>人事ラボ</strong>　｜　運営会社：株式会社飛竜企画</div><div>© HIRYU KIKAKU Co., Ltd.　 <a href="https://www.jinjilab.jp/" target="_blank" rel="noopener">人事ラボ公式サイト ↗</a></div></div></footer>
+</body></html>

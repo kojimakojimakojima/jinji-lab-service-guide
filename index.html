@@ -22,13 +22,14 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
 .logo small{display:block;color:#7c8894;font-weight:500;font-size:11px;line-height:1.4;margin-top:2px}
 .navigation{display:flex;align-items:center;gap:29px;font-size:13px;font-weight:700}
 .navigation>a:hover{color:var(--deep)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:13px;border-radius:6px;font-weight:750;font-size:14px;line-height:1.4;padding:15px 22px;transition:background .2s ease,transform .2s ease;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:54px;border-radius:100px;font-weight:800;font-size:15px;line-height:1.4;padding:14px 26px;transition:background .15s ease,transform .15s ease;white-space:nowrap}
 .btn:hover{transform:translateY(-1px)}
-.btn-primary{background:#087db7;color:#fff}
-.btn-primary:hover{background:#086496}
+.btn-primary{background:#c73438;color:#fff;box-shadow:0 9px 21px rgba(169,41,46,.17)}
+.btn-primary:hover{background:#aa292e;color:#fff}
+.navigation>a.btn-primary:hover{color:#fff}
 .btn-outline{border:1px solid #bed6e6;color:#1c658d}
 .btn-outline:hover{background:#eff9fe}
-.navigation .btn{padding:11px 19px;font-size:12px}
+.navigation .btn{min-height:42px;padding:9px 18px;font-size:12px;box-shadow:none;gap:9px}
 .hero{overflow:hidden;background:white}
 .hero-grid{display:grid;grid-template-columns:41% 59%;align-items:center;min-height:505px;padding:40px 0 45px}
 .hero-copy{position:relative;z-index:1;padding:24px 0 24px}
@@ -110,7 +111,10 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
 .contact-grid{display:flex;justify-content:space-between;align-items:center;gap:28px}
 .contact h2{font-size:32px;letter-spacing:-.045em;line-height:1.5;margin:0 0 11px;color:#fff}
 .contact p{margin:0;color:#d0e1ea;font-size:14px}
-.contact .btn{background:#fff;color:#175171;padding:17px 30px}
+.contact .btn{background:#c73438;color:#fff;padding:17px 30px;box-shadow:0 9px 21px rgba(0,0,0,.14)}
+.contact .btn:hover{background:#aa292e;color:#fff}
+.text-link{display:inline-block;margin-left:18px;font-size:13px;color:#347ea2;font-weight:700;border-bottom:1px solid #b2d5e5;padding-bottom:3px}
+.bottom-cta{display:none}
 .footer{background:#fff}
 .footer-inner{padding:27px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:12px;color:#7e8b96}
 .footer a:hover{color:#177cac}
@@ -128,7 +132,7 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
  .logo img{height:38px;width:38px}
  .logo strong{font-size:14px}
  .navigation>a:not(.btn){display:none}
- .navigation .btn{padding:11px 14px}
+ .navigation .btn{padding:9px 13px;font-size:12px;min-height:42px}
  .container{width:calc(100% - 38px)}
  .hero-grid{grid-template-columns:1fr;padding:43px 0 21px;gap:3px}
  .hero h1{font-size:clamp(32px,8vw,42px)}
@@ -174,6 +178,9 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
  .contact p{font-size:13px;margin-bottom:20px}
  .footer-inner{display:block}
  .footer-inner div+div{margin-top:6px}
+ .footer{padding-bottom:76px}
+ .bottom-cta{position:fixed;bottom:0;left:0;right:0;z-index:30;display:block;background:rgba(255,255,255,.97);border-top:1px solid #dfe7ed;padding:9px 15px calc(9px + env(safe-area-inset-bottom))}
+ .bottom-cta a{display:flex;align-items:center;justify-content:center;min-height:47px;background:#c73438;color:#fff;border-radius:7px;font-size:14px;font-weight:850;text-decoration:none}
 }
 @media(max-width:360px){.steps{grid-template-columns:1fr}.logo small{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
@@ -194,7 +201,7 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
   <a class="logo" href="#top" aria-label="人事ラボ ページトップ"><span class="jinji-logo" aria-hidden="true">人事ラボ<i></i></span><span class="logo-byline">運営：株式会社飛竜企画</span></a>
   <nav class="navigation" aria-label="ページ内ナビゲーション">
     <a href="#strength">運営会社について</a><a href="#services">サービス</a><a href="#partner">第二人事部とは</a>
-    <a class="btn btn-primary" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">お問い合わせ <span aria-hidden="true">↗</span></a>
+    <a class="btn btn-primary" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">採用について相談する <span aria-hidden="true">→</span></a>
   </nav>
 </div></header>
 <main id="top">
@@ -203,7 +210,7 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
     <p class="section-label">JINJI LAB / RECRUITMENT SUPPORT</p>
     <h1>採用のご相談は、<br>人事ラボへ。</h1>
     <p class="lead">人事ラボは、採用に関する情報と相談の入口です。運営会社の飛竜企画が、新卒・中途・アルバイト・パートの採用を、媒体選定から制作・運用まで支援しています。</p>
-    <a class="btn btn-outline" href="#strength">運営会社の実績を見る <span aria-hidden="true">→</span></a>
+    <a class="btn btn-primary" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">採用について相談する <span aria-hidden="true">→</span></a><a class="text-link" href="#strength">運営会社の実績を見る →</a>
     <p class="hero-meta">人事ラボ ／ 運営会社：株式会社飛竜企画</p>
   </div>
   <div class="hero-image"><img src="assets/hero-network.webp" alt="オフィス・工場・物流拠点と飛竜企画のスタッフがつながる、採用支援のイラスト" fetchpriority="high"></div>
@@ -287,8 +294,9 @@ a:focus-visible{outline:3px solid #069fe0;outline-offset:4px}
 </div></section>
 <section class="contact"><div class="container contact-grid">
   <div><h2>採用のことは、人事ラボへご相談ください。</h2><p>運営会社の飛竜企画が、採用状況やお困りごとを伺います。</p></div>
-  <a class="btn" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">お問い合わせ先を見る <span aria-hidden="true"> ↗</span></a>
+  <a class="btn btn-primary" href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">採用について相談する <span aria-hidden="true">→</span></a>
 </div></section>
 </main>
 <footer class="footer"><div class="container footer-inner"><div><strong>人事ラボ</strong>　｜　運営会社：株式会社飛竜企画</div><div>© HIRYU KIKAKU Co., Ltd.　 <a href="https://www.jinjilab.jp/" target="_blank" rel="noopener">人事ラボ公式サイト ↗</a></div></div></footer>
+<div class="bottom-cta"><a href="https://www.jinjilab.jp/contactlist/" target="_blank" rel="noopener">採用について相談する →</a></div>
 </body></html>
